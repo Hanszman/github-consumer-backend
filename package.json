@@ -2,8 +2,10 @@
   "name": "github-consumer-backend",
   "version": "1.0.0",
   "description": "BackEnd for Github's API Consumer that shows Users and Repos",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/Hanszman/github-consumer-backend/issues"
   },
-  "homepage": "https://github.com/Hanszman/github-consumer-backend#readme"
+  "homepage": "https://github.com/Hanszman/github-consumer-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
 }
