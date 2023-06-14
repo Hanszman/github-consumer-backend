@@ -4,8 +4,9 @@ const gitAPI = require('../services/gitApi.js');
 // Controller Functions
 const userList = async (req, res) => {
     let params = req.query;
-    console.log(params);
-    let result = await gitAPI.octokit.request("GET /users", {});
+    let since = params.since;
+    let perPage = params.per_page;
+    let result = await gitAPI.octokit.request("GET /users?since={since}&per_page={perPage}", {since, perPage});
     res.status(result.status).json({response: result});
 }
 
