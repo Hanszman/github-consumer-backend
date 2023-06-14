@@ -1,0 +1,19 @@
+{
+  "name": "github-consumer-backend",
+  "version": "1.0.0",
+  "description": "BackEnd for Github's API Consumer that shows Users and Repos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanszman/github-consumer-backend.git"
+  },
+  "author": "Victor Hanszman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanszman/github-consumer-backend/issues"
+  },
+  "homepage": "https://github.com/Hanszman/github-consumer-backend#readme"
+}
