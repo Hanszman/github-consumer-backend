@@ -11,6 +11,7 @@ const userList = async (req, res) => {
         if (result?.status === 200) {
             const lastUser = result.data[result.data.length-1].id;
             result.nextPageUrl = `${process.env.HOST}:${process.env.PORT}/api/users?since=${lastUser}&per_page=${perPage}`;
+            result.partialNextPageUrl = `/api/users?since=${lastUser}&per_page=${perPage}`;
             res.status(result.status).json({error: false, response: result});
         }
     } catch (error) {
