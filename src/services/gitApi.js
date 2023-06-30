@@ -2,9 +2,7 @@
 const { Octokit } = require('octokit');
 
 // API
-const octokit = new Octokit({
-    auth: process.env.TOKENGIT
-});
+const octokit = new Octokit({});
 
 // Exportation
 module.exports = {
